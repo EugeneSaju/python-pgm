@@ -1,6 +1,6 @@
-import sys
+import os
 
-name = sys.argv[1]
+name = os.environ.get('NAME')
 
 print(f"Hello, {name}!")
 
