@@ -1,12 +1,7 @@
 import os
 
-# Set the environment variable
-env_var_name = "MY_ENV_VAR"
-env_var_value = "HI FROM HWLLO WORLD"
-os.environ[env_var_name] = env_var_value
-
-# Get the environment variable value
-env_var_value = os.environ.get(env_var_name)
+# Get the environment variable value directly
+env_var_value = os.environ.get("MY_ENV_VAR")
 
 # Check if the environment variable exists
 if env_var_value is not None:
