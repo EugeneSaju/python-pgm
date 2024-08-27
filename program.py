@@ -2,6 +2,7 @@ import os
 
 # Get the environment variable value directly
 env_var_value = os.environ.get("MY_ENV_VAR")
+city = os.environ.get("CITY")
 
 # Check if the environment variable exists
 if env_var_value is not None:
@@ -11,3 +12,5 @@ if env_var_value is not None:
     print("Environment variable written to env_var.txt")
 else:
     print("Environment variable not found.")
+
+print(city)
